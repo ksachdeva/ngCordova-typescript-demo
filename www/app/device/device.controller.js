@@ -2,23 +2,19 @@
   'use strict';
 
   /* ngInject */
-  function DeviceController($scope, $cordovaDevice) {
-    var init = function() {
-      console.log("initializing device");
-      try {
-        document.addEventListener("deviceready", function() {
-          $scope.available = $cordovaDevice.getDevice().available;
-          $scope.cordova = $cordovaDevice.getCordova();
-          $scope.model = $cordovaDevice.getModel();
-          $scope.platform = $cordovaDevice.getPlatform();
-          $scope.uuid = $cordovaDevice.getUUID();
-          $scope.version = $cordovaDevice.getVersion();
-        }, false);
-      } catch (err) {
-        console.log("Error " + err.message);
-        alert("error " + err.$$failure.message);
-      }
-    };
+  function DeviceController($ionicPlatform, $cordovaDevice) {
+    var self = this;
+
+    function init() {
+      $ionicPlatform.ready(function() {
+        self.available = $cordovaDevice.getDevice().available;
+        self.cordova = $cordovaDevice.getCordova();
+        self.model = $cordovaDevice.getModel();
+        self.platform = $cordovaDevice.getPlatform();
+        self.uuid = $cordovaDevice.getUUID();
+        self.version = $cordovaDevice.getVersion();
+      });
+    }
 
     init();
   }

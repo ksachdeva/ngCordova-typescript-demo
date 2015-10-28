@@ -33,8 +33,7 @@
 
     .state('device', {
       url: '/device',
-      templateUrl: 'app/device/device.html',
-      controller: "DeviceController"
+      templateUrl: 'app/device/device.html'
     })
 
     .state('about', {
