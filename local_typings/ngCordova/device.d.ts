@@ -30,7 +30,7 @@ declare module ngCordova {
 		* @see https://github.com/apache/cordova-plugin-device#devicecordova
 		* @returns {String} The Cordova version.
 		*/
-		getCordovaVersion():string;
+		getCordova():string;
 		
 	   /**
 		* Returns the name of the device's model or product.

@@ -22,7 +22,7 @@ namespace demo.device {
 			$ionicPlatform.ready(() => {
 				this.vm = {
 					available : $cordovaDevice.getDevice().available,
-					cordova : $cordovaDevice.getCordovaVersion(),
+					cordova : $cordovaDevice.getCordova(),
 					model : $cordovaDevice.getModel(),
 					platform : $cordovaDevice.getPlatform(),
 					uuid : $cordovaDevice.getUUID(),
