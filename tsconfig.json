@@ -13,6 +13,7 @@
     "filesGlob": [
         "./www/app/**/*.ts",
         "./typings/**/*.ts",
+        "./local_typings/**/*.ts",
         "!./node_modules/**/*.ts",
 		"!./www/lib/**/*.ts"
     ],

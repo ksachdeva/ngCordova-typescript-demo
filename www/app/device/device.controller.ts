@@ -4,7 +4,7 @@ namespace demo.device {
 	'use strict';
 	
 	interface IDeviceViewModel {
-		available:string;
+		available:boolean;
         cordova:string;
         model:string;
         platform:string;
@@ -17,12 +17,12 @@ namespace demo.device {
 		public vm:IDeviceViewModel;
 		
 		static $inject:Array<string> = ["$ionicPlatform", "$cordovaDevice"];		
-		constructor($ionicPlatform:ionic.platform.IonicPlatformService, $cordovaDevice) {
+		constructor($ionicPlatform:ionic.platform.IonicPlatformService, $cordovaDevice:ngCordova.IDeviceService) {
 			
 			$ionicPlatform.ready(() => {
 				this.vm = {
 					available : $cordovaDevice.getDevice().available,
-					cordova : $cordovaDevice.getCordova(),
+					cordova : $cordovaDevice.getCordovaVersion(),
 					model : $cordovaDevice.getModel(),
 					platform : $cordovaDevice.getPlatform(),
 					uuid : $cordovaDevice.getUUID(),
