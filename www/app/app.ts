@@ -6,7 +6,8 @@ namespace demo {
 	var dependencies = [
 		'ionic',
 		'ngCordova',
-		'demo.device'
+		'demo.device',
+		'demo.toast'
   	];
 	
 	runApp.$inject = ["$ionicPlatform", "$window"];  
