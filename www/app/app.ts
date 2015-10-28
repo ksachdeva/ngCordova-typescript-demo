@@ -8,14 +8,10 @@ namespace demo {
 		'ngCordova',
 		'demo.device'
   	];
-
-	angular.module('demo', dependencies)
 	
-	.run(function($ionicPlatform, $window) {
-		
-		$ionicPlatform.ready(function() {
-			// Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-			// for form inputs)
+	runApp.$inject = ["$ionicPlatform", "$window"];  
+	function runApp($ionicPlatform:ionic.platform.IonicPlatformService, $window) {
+		$ionicPlatform.ready(() => {
 			if ($window.cordova && $window.cordova.plugins.Keyboard) {
 				$window.cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
 			}
@@ -23,10 +19,11 @@ namespace demo {
 				$window.StatusBar.styleDefault();
 			}
 		});
-	})
+	}
 	
-	.config(function($stateProvider, $urlRouterProvider) {
 	
+	configApp.$inject = ["$stateProvider", "$urlRouterProvider"];
+	function configApp($stateProvider, $urlRouterProvider) {
 		$urlRouterProvider.otherwise('/layout');
 	
 		$stateProvider.state('layout', {
@@ -38,7 +35,10 @@ namespace demo {
 			url: "/about",
 			templateUrl: "app/about/about.html"
 		});
-	
-	});
+	}
+
+	angular.module('demo', dependencies)	
+			.run(runApp)	
+			.config(configApp);
 	
 }

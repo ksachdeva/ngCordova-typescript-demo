@@ -16,11 +16,11 @@ namespace demo.device {
 		
 		public vm:IDeviceViewModel;
 		
-		constructor($ionicPlatform, $cordovaDevice) {
-			var self = this;
+		static $inject:Array<string> = ["$ionicPlatform", "$cordovaDevice"];		
+		constructor($ionicPlatform:ionic.platform.IonicPlatformService, $cordovaDevice) {
 			
-			$ionicPlatform.ready(function() {
-				self.vm = {
+			$ionicPlatform.ready(() => {
+				this.vm = {
 					available : $cordovaDevice.getDevice().available,
 					cordova : $cordovaDevice.getCordova(),
 					model : $cordovaDevice.getModel(),
@@ -28,7 +28,7 @@ namespace demo.device {
 					uuid : $cordovaDevice.getUUID(),
 					version : $cordovaDevice.getVersion()
 				};
-			});				
+			});
 		}
 								
 	}

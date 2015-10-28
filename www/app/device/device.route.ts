@@ -3,6 +3,7 @@
 namespace demo.device {
   'use strict';
 	
+  doConfig.$inject = ["$stateProvider"];
   function doConfig($stateProvider) {
     $stateProvider.state('device', {
       url: '/device',
