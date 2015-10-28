@@ -1,4 +1,4 @@
 (function() {
   'use strict';
-  angular.module('demo.device', []);
+  angular.module('demo.device', ['ngCordova']);
 })();

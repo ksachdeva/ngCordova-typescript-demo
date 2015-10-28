@@ -3,6 +3,7 @@
 
   var dependencies = [
     'ionic',
+    'ngCordova',
     'demo.device'
   ];
 
