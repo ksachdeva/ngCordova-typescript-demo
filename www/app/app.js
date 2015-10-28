@@ -31,11 +31,6 @@
       templateUrl: "app/layout/layout.html"
     })
 
-    .state('device', {
-      url: '/device',
-      templateUrl: 'app/device/device.html'
-    })
-
     .state('about', {
       url: "/about",
       templateUrl: "app/about/about.html"
