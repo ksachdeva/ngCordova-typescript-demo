@@ -1,7 +1,8 @@
-(function() {
-  'use strict';
+/// <reference path="../_references.ts"/>
 
-  /* @ngInject */
+namespace demo.device {
+  'use strict';
+	
   function doConfig($stateProvider) {
     $stateProvider.state('device', {
       url: '/device',
@@ -11,4 +12,4 @@
 
   angular.module('demo.device').config(doConfig);
 
-})();
+}
