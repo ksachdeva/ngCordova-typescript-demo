@@ -23,7 +23,7 @@ namespace demo {
 	
 	
 	configApp.$inject = ["$stateProvider", "$urlRouterProvider"];
-	function configApp($stateProvider, $urlRouterProvider) {
+	function configApp($stateProvider:ng.ui.IStateProvider, $urlRouterProvider:ng.ui.IUrlRouterProvider) {
 		$urlRouterProvider.otherwise('/layout');
 	
 		$stateProvider.state('layout', {

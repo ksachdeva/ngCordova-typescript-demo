@@ -4,7 +4,7 @@ namespace demo.device {
   'use strict';
 	
   doConfig.$inject = ["$stateProvider"];
-  function doConfig($stateProvider) {
+  function doConfig($stateProvider:ng.ui.IStateProvider) {
     $stateProvider.state('device', {
       url: '/device',
       templateUrl: 'app/device/device.html'
