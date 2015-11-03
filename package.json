@@ -28,7 +28,8 @@
     "cordova-plugin-network-information",
     "de.appplant.cordova.plugin.email-composer",
     "cordova-plugin-dialogs",
-    "cordova-plugin-geolocation"
+    "cordova-plugin-geolocation",
+    "cordova-plugin-device-motion"
   ],
   "cordovaPlatforms": [
     "ios",
