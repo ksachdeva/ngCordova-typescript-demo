@@ -26,7 +26,8 @@
     "ionic-plugin-keyboard",
     "cordova-plugin-x-toast",
     "cordova-plugin-network-information",
-    "de.appplant.cordova.plugin.email-composer"
+    "de.appplant.cordova.plugin.email-composer",
+    "cordova-plugin-dialogs"
   ],
   "cordovaPlatforms": [
     "ios",

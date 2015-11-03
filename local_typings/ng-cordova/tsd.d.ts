@@ -7,3 +7,4 @@
 /// <reference path="toast.d.ts"/>
 /// <reference path="network.d.ts"/>
 /// <reference path="emailComposer.d.ts"/>
+/// <reference path="dialogs.d.ts"/>

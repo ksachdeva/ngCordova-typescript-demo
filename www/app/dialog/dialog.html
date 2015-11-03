@@ -1,0 +1,31 @@
+<ion-view title="Dialogs" ng-controller="DialogController as dc">
+
+	<ion-content>
+		<div class="card">
+			<div class="item item-text-wrap text-center">
+				<strong>{{dc.action}}</strong>
+			</div>
+			<div class="item">
+				<button class="button button-block button-assertive" ng-click="dc.alert()">
+					Alert
+				</button>
+
+				<br>
+
+				<button class="button button-block button-balanced" ng-click="dc.confirm()">
+					Confirm
+				</button>
+
+				<br>
+				<button class="button button-block button-energized" ng-click="dc.prompt()">
+					Prompt
+				</button>
+				<br>
+
+				<button class="button button-block button-royal" ng-click="dc.beep()">
+					Beep
+				</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
