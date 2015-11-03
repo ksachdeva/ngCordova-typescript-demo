@@ -8,7 +8,8 @@ namespace demo {
 		'ngCordova',
 		'demo.device',
 		'demo.toast',
-		'demo.network'
+		'demo.network',
+		'demo.email'
   	];
 
 	runApp.$inject = ["$ionicPlatform", "$window"];
