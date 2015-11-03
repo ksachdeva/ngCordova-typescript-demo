@@ -13,7 +13,8 @@ namespace demo {
 		'demo.dialog',
 		'demo.geolocation',
 		'demo.devicemotion',
-		'demo.deviceorientation'
+		'demo.deviceorientation',
+		'demo.appavailability'
   	];
 
 	runApp.$inject = ["$ionicPlatform", "$window"];
