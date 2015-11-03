@@ -15,7 +15,25 @@
         "./typings/**/*.ts",
         "./local_typings/**/*.ts",
         "!./node_modules/**/*.ts",
-		"!./www/lib/**/*.ts"
+        "!./www/lib/**/*.ts"
     ],
-    "files": []
+    "files": [
+        "./www/app/_references.ts",
+        "./www/app/app.ts",
+        "./www/app/device/_module.ts",
+        "./www/app/device/device.controller.ts",
+        "./www/app/device/device.route.ts",
+        "./www/app/toast/_module.ts",
+        "./www/app/toast/toast.controller.ts",
+        "./www/app/toast/toast.route.ts",
+        "./typings/angular-ui-router/angular-ui-router.d.ts",
+        "./typings/angularjs/angular.d.ts",
+        "./typings/ionic/ionic.d.ts",
+        "./typings/jquery/jquery.d.ts",
+        "./typings/tsd.d.ts",
+        "./local_typings/ng-cordova/device.d.ts",
+        "./local_typings/ng-cordova/toast.d.ts",
+        "./local_typings/ng-cordova/tsd.d.ts",
+        "./local_typings/tsd.d.ts"
+    ]
 }

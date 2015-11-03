@@ -1,1 +1,1 @@
-/// <reference path="ngCordova/tsd.d.ts"/>
+/// <reference path="ng-cordova/tsd.d.ts"/>
