@@ -10,3 +10,4 @@
 /// <reference path="dialogs.d.ts"/>
 /// <reference path="geolocation.d.ts"/>
 /// <reference path="deviceMotion.d.ts"/>
+/// <reference path="deviceOrientation.d.ts"/>

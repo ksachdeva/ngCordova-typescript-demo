@@ -29,7 +29,8 @@
     "de.appplant.cordova.plugin.email-composer",
     "cordova-plugin-dialogs",
     "cordova-plugin-geolocation",
-    "cordova-plugin-device-motion"
+    "cordova-plugin-device-motion",
+    "cordova-plugin-device-orientation"
   ],
   "cordovaPlatforms": [
     "ios",
