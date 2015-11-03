@@ -8,4 +8,4 @@ www/lib/
 typings/
 demo.bundle.js
 demo.bundle.js.map
-www/*.js
+www/**/*.js
