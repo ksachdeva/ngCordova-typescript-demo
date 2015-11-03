@@ -10,7 +10,8 @@ namespace demo {
 		'demo.toast',
 		'demo.network',
 		'demo.email',
-		'demo.dialog'
+		'demo.dialog',
+		'demo.geolocation'
   	];
 
 	runApp.$inject = ["$ionicPlatform", "$window"];

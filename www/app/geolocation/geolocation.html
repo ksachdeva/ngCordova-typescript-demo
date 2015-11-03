@@ -1,0 +1,27 @@
+<ion-view title="Geolocation" ng-controller="GeolocationController as gc">
+
+	<ion-content>
+		<div class="card">
+			<div class="item item-divider">
+				Get My Current Location
+			</div>
+			<div class="item">
+				<strong>Longitude </strong> &nbsp {{gc.position.coords.longitude}}
+			</div>
+			<div class="item">
+
+				<strong>Latitude </strong> &nbsp {{gc.position.coords.latitude}}
+			</div>
+			<div class="item" ng-show="errorMsg">
+				<p>{{gc.errorMsg}}</p>
+			</div>
+		</div>
+
+		<div class="padding">
+			<button class="button button-block button-positive" ng-click="gc.getLocation()">
+				Get My Location
+			</button>
+
+		</div>
+	</ion-content>
+</ion-view>

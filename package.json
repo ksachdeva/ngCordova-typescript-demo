@@ -27,7 +27,8 @@
     "cordova-plugin-x-toast",
     "cordova-plugin-network-information",
     "de.appplant.cordova.plugin.email-composer",
-    "cordova-plugin-dialogs"
+    "cordova-plugin-dialogs",
+    "cordova-plugin-geolocation"
   ],
   "cordovaPlatforms": [
     "ios",
